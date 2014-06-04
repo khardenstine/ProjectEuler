@@ -8,6 +8,6 @@ class P010 extends Problem {
 
 object P010 {
 	def sumOfPrimesBelow(i: Int): BigInt = {
-		P007.primes.takeWhile(_ < i).map(BigInt(_)).sum
+		CommonFunctions.Primes.takeWhile(_ < i).map(BigInt(_)).sum
 	}
 }

@@ -11,4 +11,11 @@ object CommonFunctions {
 		}
 		sum
 	}
+
+	lazy val Primes: Stream[Int] = {
+		2 #:: Stream.from(3).filter(i =>
+			Primes.takeWhile(Math.pow(_, 2) <= i)
+				.forall(i % _ != 0)
+		)
+	}
 }
