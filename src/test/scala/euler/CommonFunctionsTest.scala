@@ -18,4 +18,9 @@ class CommonFunctionsTest extends FunSuite{
 		// P007
 		assert(Primes.take(6).toSeq equals Seq(2, 3, 5, 7, 11, 13))
 	}
+
+	test("digits iterator expands correctly") {
+		assert(getReverseDigitsIterator(3628800).toList == Seq(0, 0, 8, 8, 2, 6, 3))
+		assert(getReverseDigitsIterator(0).toList == Seq(0))
+	}
 }

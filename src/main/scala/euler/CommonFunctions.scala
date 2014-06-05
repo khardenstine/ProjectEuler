@@ -2,14 +2,29 @@ package euler
 
 object CommonFunctions {
 	def sumOfDigits(num: BigInt): Int = {
-		if (num < 0) { sys.error("only supports non-negative integers") }
-		var sum: Int = 0
-		var i = num
-		while(i > 0) {
-			sum += (i % 10).toInt
-			i /= 10
+		getReverseDigitsIterator(num).sum
+	}
+
+	/**
+	 * getDigitsIterator(5012).toSeq will return Seq(2, 1, 0, 5)
+	 * @return digits in reverse
+	 */
+	def getReverseDigitsIterator(num: BigInt): Iterator[Int] = {
+		assert(num >= 0, "only supports non-negative integers")
+		if (num == BigInt(0)) {
+			Seq(0).iterator
 		}
-		sum
+		else {
+			new Iterator[Int]{
+				private var i = num
+				def hasNext = i > 0
+				def next() = {
+					val remainder = i % 10
+					i /= 10
+					remainder.toInt
+				}
+			}
+		}
 	}
 
 	lazy val Primes: Stream[Int] = {
