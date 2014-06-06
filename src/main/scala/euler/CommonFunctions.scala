@@ -33,4 +33,8 @@ object CommonFunctions {
 				.forall(i % _ != 0)
 		)
 	}
+
+	lazy val Fibonacci: Stream[BigInt] = {
+		BigInt(0) #:: BigInt(1) #:: Fibonacci.zip(Fibonacci.tail).map(pair => pair._1 + pair._2)
+	}
 }

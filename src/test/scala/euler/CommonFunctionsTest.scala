@@ -23,4 +23,23 @@ class CommonFunctionsTest extends FunSuite{
 		assert(getReverseDigitsIterator(3628800).toList == Seq(0, 0, 8, 8, 2, 6, 3))
 		assert(getReverseDigitsIterator(0).toList == Seq(0))
 	}
+
+	test("fibonacci stream where i <= 89") {
+		val fib89 = Fibonacci.takeWhile(_ <= BigInt(89))
+		assert(fib89.length == 12)
+		assert(
+				fib89(0) == BigInt(0) &&
+				fib89(1) == BigInt(1) &&
+				fib89(2) == BigInt(1) &&
+				fib89(3) == BigInt(2) &&
+				fib89(4) == BigInt(3) &&
+				fib89(5) == BigInt(5) &&
+				fib89(6) == BigInt(8) &&
+				fib89(7) == BigInt(13) &&
+				fib89(8) == BigInt(21) &&
+				fib89(9) == BigInt(34) &&
+				fib89(10) == BigInt(55) &&
+				fib89(11) == BigInt(89)
+		)
+	}
 }
