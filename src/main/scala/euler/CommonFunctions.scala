@@ -44,7 +44,7 @@ object CommonFunctions {
    * Will return factors in order from smallest to largest
    */
   def getFactors(value: Long): Iterator[Long] = {
-    val sqrt = Math.sqrt(value.toDouble).toLong
+    val sqrt = Math.sqrt(value.toDouble)
 
     new Iterator[Long] {
       val largeFactors: mutable.Stack[Long] = mutable.Stack()
@@ -56,7 +56,9 @@ object CommonFunctions {
           p += 1
         }
         if (p <= sqrt) {
-          largeFactors.push(value / p)
+          if (p != sqrt) {
+            largeFactors.push(value / p)
+          }
           nextFactor = Some(p)
           p += 1
           true

@@ -47,7 +47,7 @@ class CommonFunctionsTest extends FunSuite{
     assert(Seq(2, 4, 5, 10) equals getFactors(20).toSeq)
   }
 
-  test("49 has the factors 7 and 7") {
-    assert(Seq(7, 7) equals getFactors(49).toSeq)
+  test("49 has the factor 7") {
+    assert(Seq(7) equals getFactors(49).toSeq)
   }
 }
