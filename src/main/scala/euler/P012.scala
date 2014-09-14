@@ -19,7 +19,7 @@ object P012 {
 			tri =>
 				// P003.getFactors does not include the actual number or 1 as factors
 				// thus it will always return 2 less than we want
-				P003.getFactors(tri).size + 2 > n
+				CommonFunctions.getFactors(tri).size + 2 > n
 		}.get
 	}
 }

@@ -13,7 +13,7 @@ object P021 {
 	def d(n: Int): Int = {
 		assert(n > 0)
 		// P003.getFactors does not include 1
-		P003.getFactors(n).sum.toInt + 1
+		CommonFunctions.getFactors(n).sum.toInt + 1
 	}
 
 	def isAmicable(n: Int): Boolean = {
