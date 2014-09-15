@@ -4,7 +4,7 @@ import org.scalatest.FunSuite
 
 class T035 extends FunSuite{
 	test("2, 3, 79, and, 197 are circular primes") {
-		val primes = CommonFunctions.Primes.takeWhile(_ < 1000)
+		val primes = CommonFunctions.Primes.takeWhile(_ < 1000).toSet
 		assert(Seq(2, 3, 79, 197).forall(P035.isCircularPrime(_, primes)))
 	}
 

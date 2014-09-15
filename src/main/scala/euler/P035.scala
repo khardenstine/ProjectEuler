@@ -10,12 +10,12 @@ object P035 {
 	def countCircularPrimesBelow(i: Int): Int = {
 		// this could be more efficient in cases like i = (10^ANY) + 1
 		val maxUsedPrime = (i - 1).toString.map(_ => '9').toInt
-		val relevantPrimes = CommonFunctions.Primes.takeWhile(_ <= maxUsedPrime).toList
+		val relevantPrimes = CommonFunctions.Primes.takeWhile(_ <= maxUsedPrime).toSet
 
 		relevantPrimes.count(isCircularPrime(_, relevantPrimes))
 	}
 
-	def isCircularPrime(num: Int, primes: Seq[Int]): Boolean = {
+	def isCircularPrime(num: Int, primes: Set[Int]): Boolean = {
 		getAllRotations(num).forall(primes.contains)
 	}
 
