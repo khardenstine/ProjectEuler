@@ -5,7 +5,7 @@ import scala.collection.mutable.ArrayBuffer
 class P037 extends Problem {
   def computeAnswer() = {
     val truncatablePrimes = new ArrayBuffer[Int](11)
-    CommonFunctions.Primes.takeWhile{ prime =>
+    CommonFunctions.Primes.takeWhile { prime =>
       if (prime > 10 && P037.isTruncatable(prime)) {
         truncatablePrimes += prime
       }

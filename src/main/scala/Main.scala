@@ -1,9 +1,9 @@
 import euler.Problem
-import scala.util.{Success, Failure, Try}
+import scala.util.{ Success, Failure, Try }
 
 object Main {
-	def main(args: Array[String]): Unit = {
-		args.foreach{
+  def main(args: Array[String]): Unit = {
+    args.foreach {
       case "timings" => logTimings()
       case arg => {
         val message = reflect(arg) match {
@@ -17,12 +17,12 @@ object Main {
         }
         System.out.println(message)
       }
-		}
-	}
+    }
+  }
 
-	def reflect(problemNumber: String): Try[Problem] = Try {
-		Class.forName("euler." + problemNumber).newInstance().asInstanceOf[Problem]
-	}
+  def reflect(problemNumber: String): Try[Problem] = Try {
+    Class.forName("euler." + problemNumber).newInstance().asInstanceOf[Problem]
+  }
 
   def logTimings() = {
     (1 to 500)

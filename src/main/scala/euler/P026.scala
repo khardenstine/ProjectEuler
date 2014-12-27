@@ -29,14 +29,14 @@ object P026 {
     var digits = ArrayBuffer[Int]()
 
     var dividend = 10
-    while(dividend != 0 && digits.size < threshold.length) {
+    while (dividend != 0 && digits.size < threshold.length) {
       digits += dividend / d
       dividend = dividend % d * 10
     }
 
     getCycle(digits)
   }
-  
+
   def getCycle(digits: Seq[Int])(implicit threshold: Threshold): Option[String] = {
     if (digits.size < threshold.length) {
       None

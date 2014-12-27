@@ -3,9 +3,9 @@ package euler
 import P093._
 
 class P093 extends Problem {
-	def computeAnswer() = {
-	  getDigitSetsLessThan(10).maxBy(calculateConsecutiveExpressibleNumbers).mkString
-	}
+  def computeAnswer() = {
+    getDigitSetsLessThan(10).maxBy(calculateConsecutiveExpressibleNumbers).mkString
+  }
 }
 
 object P093 {

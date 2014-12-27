@@ -3,7 +3,7 @@ package euler
 import euler.P026._
 import org.scalatest.FunSuite
 
-class T026 extends FunSuite{
+class T026 extends FunSuite {
   implicit val threshold = DEFAULT_THRESHOLD
 
   test("the unit fraction of 2 has no recurring cycle") {

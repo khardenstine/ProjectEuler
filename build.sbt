@@ -16,6 +16,8 @@ libraryDependencies ++= Seq(
 // See Here for more info http://www.scala-lang.org/files/archive/nightly/docs/manual/html/scalac.html 
 scalacOptions ++= List("-feature","-deprecation", "-unchecked", "-Xlint")
 
+scalariformSettings
+
 // ScalaTest settings.
 // Ignore tests tagged as @Slow (they should be picked only by integration test)
 testOptions in Test += Tests.Argument(TestFrameworks.ScalaTest, "-l", "org.scalatest.tags.Slow", "-u","target/junit-xml-reports", "-oD", "-eS")
