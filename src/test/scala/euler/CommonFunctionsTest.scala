@@ -50,4 +50,16 @@ class CommonFunctionsTest extends FunSuite {
   test("49 has the factor 7") {
     assert(Seq(7) equals getFactors(49).toSeq)
   }
+
+  test("first 10 triangle numbers") {
+    assert(TriangleNumbers.take(10).toList == List(1, 3, 6, 10, 15, 21, 28, 36, 45, 55))
+  }
+
+  test("first 10 pentagonal numbers") {
+    assert(PentagonalNumbers.take(10).toList == List(1, 5, 12, 22, 35, 51, 70, 92, 117, 145))
+  }
+
+  test("first 5 hexagonal numbers") {
+    assert(HexagonalNumbers.take(5).toList == List(1, 6, 15, 28, 45))
+  }
 }

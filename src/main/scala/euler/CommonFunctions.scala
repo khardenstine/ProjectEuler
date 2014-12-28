@@ -39,6 +39,12 @@ object CommonFunctions {
     BigInt(0) #:: BigInt(1) #:: Fibonacci.zip(Fibonacci.tail).map(pair => pair._1 + pair._2)
   }
 
+  lazy val TriangleNumbers: Stream[Int] = 1 #:: Stream.from(2).map(i => i + TriangleNumbers(i - 2))
+
+  lazy val PentagonalNumbers: Stream[Int] = Stream.from(1).map(n => n * ((3 * n) - 1) / 2)
+
+  lazy val HexagonalNumbers: Stream[Int] = Stream.from(1).map(n => n * ((2 * n) - 1))
+
   /**
    * Will return factors in order from smallest to largest
    */
