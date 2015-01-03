@@ -2,7 +2,6 @@ import java.io.FileWriter
 
 import sbt._
 import Keys._
-import sbt.complete.DefaultParsers.IntBasic
 import sbt.complete.Parsers._
 
 /**
