@@ -8,7 +8,6 @@ class P040 extends Problem {
       .map(Math.pow(10, _).toInt)
       .map(d)
       .foldLeft(1)(_ * _)
-      .toString
   }
 }
 

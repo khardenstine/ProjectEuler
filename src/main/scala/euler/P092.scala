@@ -2,7 +2,7 @@ package euler
 
 class P092 extends Problem {
   def computeAnswer() = {
-    (1 until 10000000).count(P092.chainEndsAt89).toString
+    (1 until 10000000).count(P092.chainEndsAt89)
   }
 }
 

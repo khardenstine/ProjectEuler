@@ -8,7 +8,6 @@ class P043 extends Problem {
       .filter(_.isSubstringDivisible)
       .map(_.value)
       .sum
-      .toString()
   }
 }
 

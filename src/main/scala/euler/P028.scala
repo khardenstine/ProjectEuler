@@ -2,7 +2,7 @@ package euler
 
 class P028 extends Problem {
   def computeAnswer() = {
-    P028.getDiagonalsForSquare(1001).sum.toString
+    P028.getDiagonalsForSquare(1001).sum
   }
 }
 

@@ -5,7 +5,7 @@ import scala.collection.mutable.ArrayBuffer
 
 class P026 extends Problem {
   def computeAnswer() = {
-    getLargestRecurringCycleLessThan(1000)(DEFAULT_THRESHOLD).toString
+    getLargestRecurringCycleLessThan(1000)(DEFAULT_THRESHOLD)
   }
 }
 

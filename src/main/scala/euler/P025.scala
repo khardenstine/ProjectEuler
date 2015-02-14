@@ -2,7 +2,7 @@ package euler
 
 class P025 extends Problem {
   def computeAnswer() = {
-    P025.getFirstFibonacciTermWithDigits(1000)._2.toString
+    P025.getFirstFibonacciTermWithDigits(1000)._2
   }
 }
 

@@ -4,7 +4,7 @@ import P016._
 
 class P016 extends Problem {
   def computeAnswer() = {
-    CommonFunctions.sumOfDigits(bigIntPow(2, 1000)).toString
+    CommonFunctions.sumOfDigits(bigIntPow(2, 1000))
   }
 }
 

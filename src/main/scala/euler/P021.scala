@@ -5,7 +5,6 @@ class P021 extends Problem {
     (1 until 10000)
       .filter(P021.isAmicable)
       .sum
-      .toString
   }
 }
 

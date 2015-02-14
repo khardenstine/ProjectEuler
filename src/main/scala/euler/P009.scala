@@ -4,7 +4,7 @@ class P009 extends Problem {
   def computeAnswer() = {
     P009.findTripletsForSum(1000)
       .map(t => t._1 * t._2 * t._3)
-      .foldLeft("")(_ + _ + "\n")
+      .head
   }
 }
 

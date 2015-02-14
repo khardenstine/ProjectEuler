@@ -5,7 +5,6 @@ class P023 extends Problem {
     (1 to 28123)
       .filterNot(P023.isSumOf2AbundantNumbers)
       .sum
-      .toString
   }
 }
 

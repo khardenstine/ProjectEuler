@@ -22,7 +22,7 @@ class P032 extends Problem {
           None
         }
       }
-    }.flatten.toSet.sum.toString
+    }.flatten.toSet.sum
   }
 }
 

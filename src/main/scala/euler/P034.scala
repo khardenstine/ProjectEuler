@@ -5,7 +5,6 @@ class P034 extends Problem {
     (1 to 1000000)
       .filter(P034.isCurious)
       .sum
-      .toString
   }
 }
 

@@ -2,7 +2,7 @@ package euler
 
 class P035 extends Problem {
   def computeAnswer() = {
-    P035.countCircularPrimesBelow(1000000).toString
+    P035.countCircularPrimesBelow(1000000)
   }
 }
 

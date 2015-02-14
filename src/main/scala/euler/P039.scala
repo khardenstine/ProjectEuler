@@ -8,7 +8,6 @@ class P039 extends Problem {
       .map(p => (p, rightTrianglesWithPerimeter(p).size))
       .maxBy(tup => tup._2)
       ._1
-      .toString
   }
 }
 

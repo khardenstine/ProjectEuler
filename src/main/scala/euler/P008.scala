@@ -2,7 +2,7 @@ package euler
 
 class P008 extends Problem {
   def computeAnswer() = {
-    P008.getLargestProduct(13).toString
+    P008.getLargestProduct(13)
   }
 }
 

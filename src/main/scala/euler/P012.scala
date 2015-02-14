@@ -4,7 +4,7 @@ import CommonFunctions._
 
 class P012 extends Problem {
   def computeAnswer() = {
-    P012.findFirstTriangleNumberWithDivisors(500).toString
+    P012.findFirstTriangleNumberWithDivisors(500)
   }
 }
 

@@ -12,7 +12,7 @@ class P037 extends Problem {
       truncatablePrimes.size < 11
     }.toList
 
-    truncatablePrimes.sum.toString
+    truncatablePrimes.sum
   }
 }
 

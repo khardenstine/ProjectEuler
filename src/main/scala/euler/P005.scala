@@ -2,7 +2,7 @@ package euler
 
 class P005 extends Problem {
   def computeAnswer() = {
-    P005.getSmallestDividend(1 to 20).toString
+    P005.getSmallestDividend(1 to 20)
   }
 }
 

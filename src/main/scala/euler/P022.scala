@@ -20,7 +20,7 @@ class P022 extends Problem {
       _names
     }
 
-    P022.sumOfScores(names).toString()
+    P022.sumOfScores(names)
   }
 }
 

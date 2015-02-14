@@ -6,7 +6,7 @@ class P053 extends Problem {
   def computeAnswer() = {
     (1 to 100).map(
       n => (1 to n).count(combinations(n, _) > 1000000)
-    ).sum.toString
+    ).sum
   }
 }
 

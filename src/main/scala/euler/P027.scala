@@ -6,7 +6,7 @@ class P027 extends Problem {
       a <- -999 to 999;
       b <- CommonFunctions.Primes.takeWhile(_ <= 999)
     ) yield (a * b, P027.consecutivePrimes(a, b))
-  }.maxBy(_._2)._1.toString
+  }.maxBy(_._2)._1
 }
 
 object P027 {

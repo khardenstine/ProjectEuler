@@ -2,7 +2,7 @@ package euler
 
 class P006 extends Problem {
   def computeAnswer() = {
-    Math.abs(P006.getSumOfSquares(1 to 100) - P006.getSquareOfSum(1 to 100)).toString
+    Math.abs(P006.getSumOfSquares(1 to 100) - P006.getSquareOfSum(1 to 100))
   }
 }
 

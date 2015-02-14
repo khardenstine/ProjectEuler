@@ -8,7 +8,6 @@ class P017 extends Problem {
       .map(P017.numberToWords)
       .map(P017.filteredStringLength)
       .sum
-      .toString
   }
 }
 

@@ -5,7 +5,6 @@ class P002 extends Problem {
     P002.buildFibonacciItr(4000000)
       .filter(_ % 2 == 0)
       .sum
-      .toString()
   }
 }
 

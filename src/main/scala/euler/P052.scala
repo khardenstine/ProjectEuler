@@ -9,7 +9,6 @@ class P052 extends Problem {
       .find(sameDigits(_: _*))
       .get
       .min // since n * 1 is included, we just grab the min (the seq is not ordered)
-      .toString
   }
 }
 

@@ -6,6 +6,6 @@ class P036 extends Problem {
       .filter(i =>
         P004.isPalindrome(i.toString) && P004.isPalindrome(Integer.toBinaryString(i))
       )
-      .sum.toString
+      .sum
   }
 }

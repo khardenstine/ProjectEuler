@@ -1,7 +1,7 @@
 package euler
 
 class P001 extends Problem {
-  def computeAnswer() = P001.sumOfMultiplesBelow(1000).toString
+  def computeAnswer() = P001.sumOfMultiplesBelow(1000)
 }
 
 object P001 {

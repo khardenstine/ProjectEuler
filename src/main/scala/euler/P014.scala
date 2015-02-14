@@ -10,7 +10,7 @@ class P014 extends Problem {
           largest = (i, len)
         }
     }
-    largest._1.toString
+    largest._1
   }
 }
 

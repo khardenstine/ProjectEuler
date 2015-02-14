@@ -4,7 +4,7 @@ import P011._
 
 class P011 extends Problem {
   def computeAnswer() = {
-    getGreatestProduct(GRID, 4).toString
+    getGreatestProduct(GRID, 4)
   }
 }
 
