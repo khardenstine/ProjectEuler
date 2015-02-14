@@ -13,7 +13,7 @@ object P034 {
   def isCurious(n: Int): Boolean = {
     val digits = CommonFunctions.getReverseDigitsIterator(n).toList
     if (digits.size > 1)
-      digits.map(P020.factorialStream).sum.toInt == n
+      digits.map(CommonFunctions.FactorialStream).sum.toInt == n
     else
       false
   }

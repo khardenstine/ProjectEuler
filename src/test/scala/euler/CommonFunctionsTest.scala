@@ -62,4 +62,16 @@ class CommonFunctionsTest extends FunSuite {
   test("first 5 hexagonal numbers") {
     assert(HexagonalNumbers.take(5).toList == List(1, 6, 15, 28, 45))
   }
+
+  test("0! is 1") {
+    assert(FactorialStream(0) == BigInt(1))
+  }
+
+  test("1! is 1") {
+    assert(FactorialStream(1) == BigInt(1))
+  }
+
+  test("10! is 3628800") {
+    assert(FactorialStream(10) == BigInt(3628800))
+  }
 }

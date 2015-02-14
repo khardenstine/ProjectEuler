@@ -45,6 +45,8 @@ object CommonFunctions {
 
   lazy val HexagonalNumbers: Stream[Int] = Stream.from(1).map(n => n * ((2 * n) - 1))
 
+  lazy val FactorialStream: Stream[BigInt] = BigInt(1) #:: Stream.from(1).map(i => i * FactorialStream(i - 1))
+
   /**
    * Will return factors in order from smallest to largest
    */
