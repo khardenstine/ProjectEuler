@@ -35,6 +35,12 @@ object CommonFunctions {
     )
   }
 
+  lazy val CompositeNumbers: Stream[Int] = {
+    Stream.from(2).filter(i =>
+      Primes.find(_ >= i).get > i
+    )
+  }
+
   lazy val Fibonacci: Stream[BigInt] = {
     BigInt(0) #:: BigInt(1) #:: Fibonacci.zip(Fibonacci.tail).map(pair => pair._1 + pair._2)
   }

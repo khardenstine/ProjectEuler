@@ -19,6 +19,10 @@ class CommonFunctionsTest extends FunSuite {
     assert(Primes.take(6).toSeq equals Seq(2, 3, 5, 7, 11, 13))
   }
 
+  test("the first 6 composites are 4, 6, 8, 9, 10, 12") {
+    assert(CompositeNumbers.take(6).toSeq equals Seq(4, 6, 8, 9, 10, 12))
+  }
+
   test("digits iterator expands correctly") {
     assert(getReverseDigitsIterator(3628800).toList == Seq(0, 0, 8, 8, 2, 6, 3))
     assert(getReverseDigitsIterator(0).toList == Seq(0))
