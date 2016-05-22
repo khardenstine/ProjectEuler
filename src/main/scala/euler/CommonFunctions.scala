@@ -31,14 +31,12 @@ object CommonFunctions {
   lazy val Primes: Stream[Int] = {
     2 #:: Stream.from(3).filter(i =>
       Primes.takeWhile(Math.pow(_, 2) <= i)
-        .forall(i % _ != 0)
-    )
+        .forall(i % _ != 0))
   }
 
   lazy val CompositeNumbers: Stream[Int] = {
     Stream.from(2).filter(i =>
-      Primes.find(_ >= i).get > i
-    )
+      Primes.find(_ >= i).get > i)
   }
 
   lazy val Fibonacci: Stream[BigInt] = {

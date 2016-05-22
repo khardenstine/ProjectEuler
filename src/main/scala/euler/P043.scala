@@ -36,7 +36,8 @@ object P043 {
       d7: Int,
       d8: Int,
       d9: Int,
-      d10: Int) {
+      d10: Int
+  ) {
     def value = buildBigInt(d1, d2, d3, d4, d5, d6, d7, d8, d9, d10)
 
     def isSubstringDivisible: Boolean = {
